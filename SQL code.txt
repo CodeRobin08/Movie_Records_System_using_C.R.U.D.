@@ -1,0 +1,10 @@
+CREATE TABLE `movie` (
+  `movieid` INT(11) NOT NULL AUTO_INCREMENT,
+  `movie_name` VARCHAR(100) NOT NULL,
+  `year` YEAR NOT NULL,
+  `resolution` ENUM('720p', '1080p') NOT NULL,
+  `quality` ENUM('BluRay', 'Webrip') NOT NULL,
+  `country_name` VARCHAR(50) NOT NULL,
+  `location` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`movieid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
